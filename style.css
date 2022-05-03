@@ -34,6 +34,15 @@
 
 }
 
+.container .img img {
+    width: 49%;
+    height: auto;
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+}
+
 
 /* Navbar Section ---------------------------------------------*/
 
@@ -67,6 +76,7 @@ a {
     font-size: 100%;
 }
 
+
 /* Button Scroll --------------------------------------------- */
 
 .button-scroll {
@@ -92,13 +102,14 @@ a {
 }
 
 .button-scroll:hover {
-    box-shadow: #4600FF;
+    /*Develope*/
 }
 
 
 /* Home Section ----------------------------------------------*/
 
 .container-home {
+    border: 1px solid red;
     height: 12%;
     top: 2.5%;
 }
@@ -140,9 +151,14 @@ a {
     display: flex;
     justify-content: center;
     border: #fff;
-    width: 30%;
-    height: 10%;
+    width: 55%;
+    height: 15%;
+    margin-top: 5%;
 
+}
+
+.container-home .button input {
+    width: 190%;
 }
 
 .container-home input {
@@ -151,15 +167,203 @@ a {
     border-radius: 30px;
     border: none;
     font-weight: 700;
-    font-size: 16px;
-    margin-left: 20px;
+    font-size: 20px;
 }
 
-.container-home img {
-    width: 70%;
+
+/* About Me Section ---------------------------------------------- */
+
+.container-about {
+    background-color: transparent;
+    border: 1px solid green;
+    width: 100%;
+    height: 15%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.container-about .container-text {
+    border: 1px solid rgb(255, 0, 0);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-about h1 {
+    background-color: #120632;
+    color: #4600FF;
+    font-size: 320%;
+    margin: 0;
+    font-weight: 750;
+}
+
+.container-about p {
+    background-color: transparent;
+    color: #ffffff;
+    margin-bottom: 2%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-about .container-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    gap: 3%;
+    margin-top: 20px;
+    border: 1px solid green;
+}
+
+.container-about .box {
+    width: 10%;
+    background: transparent;
+}
+
+.container-about .container-button .linkedin {
+    width: 11%;
+}
+
+.container-about .container-button .instagram {
+    width: 9%;
+}
+
+.container-about img {
+    width: 100%;
     height: auto;
     background: transparent;
-    position: absolute;
-    top: 2%;
-    left: 50%;
+}
+
+
+/* Habilites Section ----------------------------------------- */
+
+.container-habilities {
+    border: 1px solid red;
+    width: 100%;
+    height: 15%;
+    margin-top: 10%;
+}
+
+.container-habilities .container-title {
+    border: 1px solid green;
+    width: 100%;
+    height: 10%;
+}
+
+.container-habilities .container-title h1 {
+    background: transparent;
+    color: #4600FF;
+    font-size: 320%;
+    margin: 0;
+}
+
+.container-habilities .container-title h1 a {
+    color: #fff;
+}
+
+.container-habilities .container-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background: transparent;
+    border: 1px solid #ff4800;
+}
+
+.container-habilities .technologies {
+    border: 1px solid rgb(0, 217, 255);
+    width: 47.5%;
+    height: 95%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-habilities .technologies .line {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    width: 95%;
+    height: 32%;
+}
+
+.container-habilities .technologies .line img {
+    width: 28%;
+    background: transparent;
+}
+
+.container-habilities .technologies .line .image-decrease {
+    width: 23%;
+}
+
+.container-habilities .technologies .line .image-increase {
+    width: 30%;
+}
+
+.container-habilities .experiences {
+    display: flex;
+    justify-content: center;
+    width: 47.5%;
+    height: 95%;
+    background: transparent;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.container-habilities .experiences .line {
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    margin: 0;
+}
+
+.container-habilities .experiences .line p {
+    color: #fff;
+    background: transparent;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-habilities .experiences .line .date {
+    color: #4600FF;
+    background: transparent;
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 2%;
+}
+
+.container-habilities .experiences .line-separation {
+    border: 1px solid #4600FF;
+    transform: rotate(180deg);
+    margin: 1.5%;
+}
+
+
+/* Projects Section -------------------------------------------- */
+
+.container-projects {
+    border: 1px solid green;
+    width: 100%;
+    height: 20%;
+    margin-top: 10%;
+}
+
+.container-projects .container-title {
+    border: 1px solid red;
+    width: 100%;
+    height: 10%;
 }

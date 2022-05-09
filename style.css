@@ -17,7 +17,7 @@
     justify-content: center;
     position: absolute;
     width: 70%;
-    height: 3799px;
+    height: 3700px;
     margin-top: 50px;
     background-color: #120632;
     box-shadow: -24px 24px 37px #120632;
@@ -25,10 +25,9 @@
 }
 
 .container-alignment {
-    border: 1px solid yellow;
     position: absolute;
     width: 70%;
-    height: 3799px;
+    height: 3700px;
     display: flex;
     flex-direction: column;
 
@@ -43,6 +42,15 @@
     left: 50%;
 }
 
+h1 {
+    background-color: #120632;
+    color: #4600FF;
+    font-size: 320%;
+    margin: 0;
+    font-weight: 750;
+}
+
+
 
 /* Navbar Section ---------------------------------------------*/
 
@@ -51,7 +59,7 @@
     justify-content: end;
     width: 100%;
     height: 2%;
-    position: sticky;
+    position:sticky;
     top: 0;
     gap: 3%;
 }
@@ -109,7 +117,6 @@ a {
 /* Home Section ----------------------------------------------*/
 
 .container-home {
-    border: 1px solid red;
     height: 12%;
     top: 2.5%;
 }
@@ -175,7 +182,6 @@ a {
 
 .container-about {
     background-color: transparent;
-    border: 1px solid green;
     width: 100%;
     height: 15%;
     margin-top: 10%;
@@ -184,20 +190,12 @@ a {
 }
 
 .container-about .container-text {
-    border: 1px solid rgb(255, 0, 0);
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.container-about h1 {
-    background-color: #120632;
-    color: #4600FF;
-    font-size: 320%;
-    margin: 0;
-    font-weight: 750;
-}
 
 .container-about p {
     background-color: transparent;
@@ -214,7 +212,6 @@ a {
     background: transparent;
     gap: 3%;
     margin-top: 20px;
-    border: 1px solid green;
 }
 
 .container-about .box {
@@ -227,7 +224,8 @@ a {
 }
 
 .container-about .container-button .instagram {
-    width: 9%;
+    width: 11%;
+    filter: invert(9%) sepia(100%) saturate(7216%) hue-rotate(262deg) brightness(93%) contrast(128%);
 }
 
 .container-about img {
@@ -240,14 +238,12 @@ a {
 /* Habilites Section ----------------------------------------- */
 
 .container-habilities {
-    border: 1px solid red;
     width: 100%;
     height: 15%;
     margin-top: 10%;
 }
 
 .container-habilities .container-title {
-    border: 1px solid green;
     width: 100%;
     height: 10%;
 }
@@ -270,11 +266,9 @@ a {
     width: 100%;
     height: 90%;
     background: transparent;
-    border: 1px solid #ff4800;
 }
 
 .container-habilities .technologies {
-    border: 1px solid rgb(0, 217, 255);
     width: 47.5%;
     height: 95%;
     background: transparent;
@@ -285,7 +279,6 @@ a {
 }
 
 .container-habilities .technologies .line {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,7 +309,6 @@ a {
     display: flex;
     justify-content: right;
     align-items: center;
-
 }
 
 .container-habilities .experiences .line {
@@ -353,17 +345,296 @@ a {
 }
 
 
+
 /* Projects Section -------------------------------------------- */
 
 .container-projects {
-    border: 1px solid green;
     width: 100%;
     height: 20%;
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-projects .container-title {
-    border: 1px solid red;
     width: 100%;
     height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.container-projects .content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-projects .content .line {
+    width: 100%;
+    height: 47.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-projects .content .line .box {
+    border: 1px solid #4600FF;
+    border-radius: 25px;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-projects .content .centered {
+    justify-content: center;
+}
+
+.container-projects .content .line .box .image {
+    width: 90%;
+    height: 50%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container-projects .content .line .box .image img {
+    width: 100%;
+}
+
+.container-projects .content .line .box .correction img {
+    height: 100%;
+    width: auto;
+}
+
+
+.container-projects .content .line .box .title {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-projects .content .line .box .title h3 {
+    background: transparent;
+    color: #fff;
+}
+
+.container-projects .content .line .box .technologies {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-projects .content .box .technologies img {
+    width: 30%;
+    background: transparent;
+}
+
+
+
+/* Contact Me ------------------------------------------------- */
+
+.container-contact {
+    width: 70%;
+    height: 15%;
+    position: fixed;
+    bottom: 3%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container-contact .title h1 {
+    color: #fff;
+    font-size: 400%;
+}
+
+.container-contact .content {
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-contact .content .box {
+    border: 1px solid #4600FF;
+    width: 48%;
+    height: 80%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contact .content .box .title {
+    width: auto;
+    height: 10%;
+    position: absolute;
+    top: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #120632;
+}
+
+.container-contact .content .box .title h2 {
+    background: transparent;
+    color: #4600FF;
+    font-size: 225%;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.container-contact .content .box .input-email {
+    border: 1px solid #4600FF;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.container-contact .content .box .input-email input {
+    background: #120632;
+    border: none;
+    color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.container-contact .content .box .input-email input:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.container-contact .content .box .input-message {
+    border: 1px solid #4600FF;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-contact .content .box .input-message textarea {
+    background: #120632;
+    color: #fff;
+    width: 90%;
+    height: 90%;
+    border: none;
+    padding: 1%;
+    font-size: medium;
+}
+
+.container-contact .content .box .input-message textarea:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.container-contact .content .box .btn-send {
+    width: 50%;
+    height: 15%;
+}
+
+.container-contact .content .box .btn-send input {
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    color: #120632;
+    background-color: #4600FF;
+    font-weight: 750;
+}
+
+.container-contact .content .box h2 {
+    color: #fff;
+    background-color: transparent;
+    font-size: 200%;
+}
+
+.container-contact .content .box img {
+    background-color: transparent;
+    font-size: 200%;
+    filter: invert(9%) sepia(100%) saturate(7216%) hue-rotate(262deg) brightness(93%) contrast(128%);
+}
+
+
+/* Footer ------------------------------------------------- */
+
+.container-footer {
+    border: 1px solid #4600FF;
+    position: fixed;
+    bottom: 0%;
+    width: 70%;
+    height: 2%;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-footer .links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.container-footer .links img {
+    background: transparent;
+    filter: invert(9%) sepia(100%) saturate(7216%) hue-rotate(262deg) brightness(93%) contrast(128%);
+}
+
+.container-footer .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer .text h4 {
+    background: transparent;
+    color: #ffffff;
 }
